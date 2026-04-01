@@ -1,5 +1,6 @@
 <?php
 include_once(__DIR__ . '/../../../../controlador/seguridad.php');
+require_once(__DIR__ . '/../../../../config/bootstrap.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -51,7 +52,7 @@ include_once(__DIR__ . '/../../../../controlador/seguridad.php');
 
 
     </main>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2daqt-ds5rAOzWIzebNdAyS4CEM6opDM&libraries=places&callback=initMap"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=<?= htmlspecialchars($_ENV['GOOGLE_MAPS_API_KEY']) ?>&libraries=places&callback=initMap"></script>
 <script>
 const latInput = document.getElementById('latitud_oculta');
 const lngInput = document.getElementById('longitud_oculta');

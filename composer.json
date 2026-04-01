@@ -1,0 +1,13 @@
+{
+    "name": "bonaz/citasaciegas",
+    "description": "Aplicacion web para citas a ciegas",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luz Nicohol Bonazeski"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
