@@ -1,0 +1,49 @@
+.fondo-gris{
+    background-color: rgba(244, 244, 244, 1);
+}
+
+.enlacevioleta{
+    color:blueviolet;
+}
+
+.color1{
+    color:blue !important;
+}
+
+.color2{
+    color:brown !important;
+}
+
+.color3{
+    color:rgb(248, 109, 167) !important;
+}
+
+.color4{
+    color:blueviolet !important;
+}
+
+.degrade{
+    /* 1. Definir el degradado proporcionado por el usuario */
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 2, 7, 1),      /* Rojo */
+        rgba(255, 43, 128, 1),   /* Rosa fuerte */
+        rgba(235, 44, 252, 1),   /* Violeta */
+        rgba(45, 62, 250, 1)     /* Azul */
+    );
+    
+    /* 2. Recortar el degradado al área del texto (Propiedades cruciales) */
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    background-clip: text;
+    
+    /* 3. Hacer que el texto sea transparente para ver el fondo */
+    color: transparent;
+    
+    /* SOLUCIÓN AL RECORTE: Agregar relleno vertical */
+    padding-top: 3px; 
+    padding-bottom: 3px;
+    
+   /* Asegura que el elemento ocupe solo el espacio necesario para que el efecto se vea bien */
+    display: inline-block; 
+}
